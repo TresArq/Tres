@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: 333;
+    overflow-x: hidden;
+}
+
+/* PRINCIPAL VIDEO */
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.content {
+    max-width: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-video video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 1;
+    opacity: .72;
+}
+
+.header-content {
+    z-index: 2;
+}
+
+.header-content img {
+    width: 70%;
+    height: auto;
+    margin: 40px auto;
+    display: flex;
+    padding: 90px;
+}
+
+.btn {
+    color: rgb(126, 124, 124);
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 1rem;
+}
+
+.btn:hover {
+    opacity: .6;
+    color: #fff;
+}
+
+/* BANNER ONE */
+.banner1 img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    padding: 0px;
+  }
+
+  .banner2 img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    padding: 0px;
+  }
+
+  .banner3 img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    padding: 0px;
+  }
+
+/* CARDS */
+.card1 img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+  }
+
+  .card2 img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+  }
+
+  .card3 img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+  }
+
+/* Proyectos */
+.proyecto1 img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+  }
+
+
+
+/* Social */
+.social {
+    margin: 20px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 10px;
+}
+
+.links i {
+    font-size: 2rem;
+    color: rgb(126, 124, 124);
+}
+
+/* Footer */
+.footer {
+    color: #616161;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+    text-align: center;
+    padding-bottom: 10px;
+    background: black;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+
+    .content {
+        padding: 0 4rem 0 4rem;
+    } 
+
+    .footer {
+        font-size: 8px;
+    }
+}
+
