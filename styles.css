@@ -152,7 +152,9 @@ hr {
   text-align: center;
 }
 
-
+.news-cards p {
+  text-align: center;
+}
 
 .news-cards a {
   padding: 10px 0;
