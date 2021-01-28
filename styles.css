@@ -314,6 +314,10 @@ hr {
     margin-right: 50px;
     font-size: 21px;
   }
+  
+   .nav-main {
+    margin-bottom: 0px;
+  }
 
   .news-cards {
     grid-template-columns: repeat(2, 1fr);
