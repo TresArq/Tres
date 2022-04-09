@@ -47,7 +47,6 @@ function rendimiento ()
     document.getElementById('vtotal').value=(vtotal).toFixed(2);
     document.getElementById('ganancia').value=ganancia;
     document.getElementById('dormis').value=Math.round(dormis);
-    document.getElementById('retfondo').value=retfondo;
     document.getElementById('cocheras').value=Math.round(cocheras);
     document.getElementById('terrazas').value=Math.round(terrazas);
 }
