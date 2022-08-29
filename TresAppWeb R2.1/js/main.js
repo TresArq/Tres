@@ -33,8 +33,8 @@ function rendimiento ()
     var cmcuad=ctotal/supedif
     var vfcub=mcub*pvcub
     var vfsemi=msemi*pvsemi
-    var vtotal=vfcub
-    var ganancia=(vtotal+vterrazas+vcochera-ctotal).toFixed(2)
+    var vtotal=vfcub+vfsemi+vcochera+vterrazas
+    var ganancia=(vtotal-ctotal).toFixed(2)
     var rendvf=(ganancia*100/ctotal).toFixed(2)
     var rendvp=rendvf*.3
     var invtotal=(ctotal).toFixed(2)
@@ -49,6 +49,7 @@ function rendimiento ()
     document.getElementById('dormis').value=Math.round(dormis);
     document.getElementById('cocheras').value=Math.round(cocheras);
     document.getElementById('terrazas').value=Math.round(terrazas);
+    document.getElementById('retfondo').value=Math.round(retfondo);
 }
 
 
