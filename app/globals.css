@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black text-white;
+}
+
+#home {
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  #home {
+    background-attachment: scroll;
+  }
+}
+
