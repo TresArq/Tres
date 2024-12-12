@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <base href="." />
+    <title>Tres Arquitectura</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/IconoTresNegro.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo-container">
+                <div class="logo-image">
+                    <img src="img/IconoTresNegro.png" alt="Tres Arquitectura Logo">
+                </div>
+            </a>
+            <div class="menu-toggle">
+                <i class="fas fa-plus"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="section-content">
+            <img src="img/TRES_Logo.png" alt="TRES Arquitectura" class="home-logo">
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="section-content">
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>ARQUITECTURA</h3>
+                    <p>Nuestro equipo de profesionales se encarga de diseñar proyectos de alta calidad, para lograr el maximo rendimiento en tu inversión, óptimizando costos y recursos. Trabajamos desde la visión de la arquitectura moderna, haciendo foco en las necesidades del cliente.</p>
+                    <p style="margin-top: 1.5rem; color: #fff; font-weight: bold; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                        ANTEPROYECTO │ PROYECTO │ DOCUMENTACIÓN │ DIRECCIÓN DE OBRA
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>+</h3>
+                    <p>Como valor agregado te brindamos herramientas para facilitarte la comunicación y comercialización generando Material Multimedia de los Proyectos.</p>
+                    <p style="margin-top: 1.5rem; color: #fff; font-weight: bold; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                        RENDERS FOTORREALISTAS │ RECORRIDOS VIRTUALES │ PAGINAS WEB │ PRESENTACIONES DIGITALES
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>DESARROLLO</h3>
+                    <p>Realizamos todos los estudios relativos a la viabilidad arquitectónica y comercial del proyecto, para descubrir si su creación es factible y si se trata de un proyecto rentable. Realizamos la búsqueda del lote o propiedad, diseñamos el proyecto, gestionamos los aspectos legales, economicos y ejecutamos la construcción.</p>
+                    <p style="margin-top: 1.5rem; color: #fff; font-weight: bold; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                        FACTIBILIDAD │ GESTIÓN INTEGRAL │ MODELO E IMPLEMENTACIÓN DE NEGOCIO │ LEGALES
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <div class="section-content">
+            <div class="projects-grid">
+                <div class="project-card" data-project="1">
+                    <img src="img/PFC2.jpg" alt="Pozos290">
+                    <img src="img/Pozos290_Logo.png" alt="Pozos290 Logo" class="hover-logo">
+                </div>
+                <div class="project-card" data-project="2">
+                    <img src="img/RF12.jpg" alt="Ramon Falcon">
+                </div>
+                <div class="project-card" data-project="3">
+                    <img src="img/LF4.jpg" alt="ArqMB">
+                </div>
+                <div class="project-card" data-project="4">
+                    <img src="img/C03.jpg" alt="ArqMB">
+                </div>
+                <div class="project-card" data-project="5" data-title="Desarrollo Urbano">
+                    <img src="img/PFC2.jpg" alt="Proyecto 5">
+                </div>
+                <div class="project-card" data-project="6" data-title="Casa Sustentable">
+                    <img src="img/PFC2.jpg" alt="Proyecto 6">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="projectModal">
+            <div class="modal-content">
+                <span class="close-modal" title="Close">&times;</span>
+                <div class="modal-gallery">
+                    <div class="main-image-container">
+                        <img src="" class="main-modal-image" alt="Project main image">
+                        <button class="modal-nav-btn prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="modal-nav-btn next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="thumbnail-container">
+                        <img src="" class="thumbnail-image" alt="Thumbnail 1">
+                        <img src="" class="thumbnail-image" alt="Thumbnail 2">
+                        <img src="" class="thumbnail-image" alt="Thumbnail 3">
+                        <img src="" class="thumbnail-image" alt="Thumbnail 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <div class="section-content">
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>SERIEDAD Y COMPROMISO</h3>
+                    <p>Hacemos de tu idea, lote o propiedad un negocio rentable. realizando estudios de viabilidad, costos de desarrollo, diseño del proyecto y construcción de la obra.</p>
+                </div>
+                <div class="about-card">
+                    <h3>CALIDAD Y DISEÑO</h3>
+                    <p>Desarrollamos con foco en productos y propuestas que mejoren la calidad de vida de las personas, desde la innovación y la sustentabilidad, generando valor agregado que maximiza la rentabilidad de los proyectos.</p>
+                </div>
+                <div class="about-card">
+                    <h3>EXPERIENCIA JOVEN</h3>
+                    <p>Somos una empresa dinámica y flexible, comprometida con la eficiencia de nuestros procesos, adecuándonos a las necesidades del mercado, la innovación y la tecnología.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="section-content">
+            <div class="contact-details">
+                <div class="contact-item">
+                    <a href="mailto:info@tresarquitectura.com">info@tresarquitectura.com</a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://wa.me/5491140387281">+54 9 11 4038-7281</a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://wa.me/5491158508647">+54 9 11 5850-8647</a>
+                </div>
+                <div class="contact-item">
+                    <span>Rodriguez Peña 505, Banfield, Bs As, Argentina</span>
+                </div>
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/5491140387281" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for navigation links with offset for header
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            // Remove active class from all links
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Add active class to clicked link
+            this.classList.add('active');
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            const headerOffset = document.querySelector('header').offsetHeight;
+            
+            if (targetElement) {
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    const modal = document.getElementById('projectModal');
+    const projectCards = document.querySelectorAll('.project-card');
+    const closeModal = document.querySelector('.close-modal');
+    const mainModalImage = document.querySelector('.main-modal-image');
+    const thumbnails = document.querySelectorAll('.thumbnail-image');
+
+    const projectImages = {
+        1: {
+            main: 'img/PFC2.jpg',
+            thumbnails: ['img/PINT3A.jpg', 'img/TerrazaPrueba.jpg', 'img/P2ALiVING.jpg', 'img/PCOCINA3A.jpg']
+        },
+        2: {
+            main: 'img/RF12.jpg',
+            thumbnails: ['img/RF09.jpg', 'img/RF10.jpg', 'img/RF11.jpg', 'img/RF12.jpg']
+        },
+        3: {
+            main: 'img/LF4.jpg',
+            thumbnails: ['img/LF1.jpg', 'img/LF2.jpg', 'img/LF3.jpg', 'img/LF4.jpg']
+        },
+        4: {
+            main: 'img/C03.jpg',
+            thumbnails: ['img/C03.jpg', 'img/C04.jpg', 'img/I08.jpg', 'img/I10.jpg']
+        }
+        // Add other project images here as needed
+    };
+
+    projectCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const projectId = card.getAttribute('data-project');
+            if (projectImages[projectId]) {
+                mainModalImage.src = projectImages[projectId].main;
+                thumbnails.forEach((thumb, index) => {
+                    if (projectImages[projectId].thumbnails[index]) {
+                        thumb.src = projectImages[projectId].thumbnails[index];
+                    }
+                });
+            } else {
+                const projectImage = card.querySelector('img').src;
+                mainModalImage.src = projectImage;
+                thumbnails.forEach(thumb => {
+                    thumb.src = projectImage;
+                });
+            }
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    thumbnails.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            mainModalImage.src = thumb.src;
+            mainModalImage.style.opacity = '0';
+            setTimeout(() => {
+                mainModalImage.style.opacity = '1';
+            }, 50);
+        });
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    const logoLink = document.querySelector('.logo-container');
+    logoLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        
+        // Prevent scroll when mobile menu is open
+        if (nav.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+            nav.classList.remove('active');
+            menuToggle.classList.remove('active');
+        }
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            menuToggle.classList.remove('active');
+        });
+    });
+
+    // Close mobile menu when resizing window beyond mobile breakpoint
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            nav.classList.remove('active');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    function updateMainImage(direction) {
+        const currentSrc = mainModalImage.src;
+        const thumbnailSrcs = Array.from(thumbnails).map(thumb => thumb.src);
+        let currentIndex = thumbnailSrcs.indexOf(currentSrc);
+        
+        if (direction === 'next') {
+            currentIndex = (currentIndex + 1) % thumbnailSrcs.length;
+        } else {
+            currentIndex = (currentIndex - 1 + thumbnailSrcs.length) % thumbnailSrcs.length;
+        }
+        
+        mainModalImage.src = thumbnailSrcs[currentIndex];
+    }
+
+    prevBtn.addEventListener('click', () => updateMainImage('prev'));
+    nextBtn.addEventListener('click', () => updateMainImage('next'));
+
+    // Add keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (modal.style.display === 'block') {
+            if (e.key === 'ArrowLeft') {
+                updateMainImage('prev');
+            } else if (e.key === 'ArrowRight') {
+                updateMainImage('next');
+            } else if (e.key === 'Escape') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    });
+});
+</script>
+</body>
+</html>
+
